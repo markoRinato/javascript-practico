@@ -66,11 +66,14 @@ console.groupEnd(); // Aqui se cierra la agrupación los mensajes de console.log
 
 //Aqui interactuamos con el HTML
 
+//CUADRADO
+
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value; // Aqui mando a llamar solo el valor del Input "InputCuadrado".
     const perimetro = perimetroCuadrado(value); // Aqui mando a llamar solo la funcion y el valor del Input "perimetroCuadrado".
-    alert(perimetro);
+    //alert(perimetro);
+    document.getElementById("cuadrado_perimetro").value = perimetro;
 }
 
 
@@ -78,5 +81,49 @@ function calcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value; // Aqui mando a llamar solo el valor del Input "InputCuadrado".
     const area = areaCuadrada(value); // Aqui mando a llamar solo la funcion y el valor del Input "areaCuadrado".
-    alert(area);
+    //alert(area);
+    document.getElementById("cuadrado_area").value = area;
 }
+
+//CIRCULO
+
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const value = input.value; // Aqui mando a llamar solo el valor del Input "InputCirculo".
+    const perimetro= perimetroCirculo(value); // Aqui mando a llamar solo la funcion y el valor del Input "perimetroCirculo".
+    //alert(perimetro);
+    document.getElementById("circulo_perimetro").value = perimetro;
+}
+
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const value = input.value; // Aqui mando a llamar solo el valor del Input "InputCirculo".
+    const area = areaCirculo(value); // Aqui mando a llamar solo la funcion y el valor del Input "areaCirculo".
+    //alert(area);
+    document.getElementById("circulo_area").value = area;
+}
+
+//TRIANGULO
+
+function calcularPerimetroTriangulo(){
+    const lado1 = Number(document.getElementById("InputTrianguloA").value),
+    lado2 = Number(document.getElementById("InputTrianguloB").value),
+    base = Number(document.getElementById("InputTrianguloC").value),
+    perimetro = perimetroTriangulo(lado1, lado2, base);
+    document.getElementById("triangulo_perimetro").value = perimetro;
+}
+
+
+function calcularAreaTriangulo(){
+    const base = Number(document.getElementById("InputTrianguloC").value),
+    altura = Number(document.getElementById("InputTrianguloD").value),
+    area = areaTriangulo(base, altura);
+    document.getElementById("triangulo_area").value = area;
+}
+
+function limpiarFormulario() {
+    document.getElementById("miForm").reset();
+    document.getElementById("miForm2").reset();
+    document.getElementById("miForm3").reset();
+  }

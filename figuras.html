@@ -5,27 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./figuras.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <title>Figuras Geométricas | Curso Práctico de Javascript</title>
 </head>
 <body>
     <header>
         <h1>Figuras Geométricas</h1>
         <p>Este es el primer taller del curso práctico de Javascript en Platzi &diams</p>
+        <button type="button" onclick="limpiarFormulario()" class="header__button">Borrar Datos</button>
     </header>
-    <section>
-        <h2>Calcula el área y perímetro de un cuadrado</h2>
-        <form action="">
-            <label for="InputCuadrado">Escribe cuanto mide cada lado de tu cudrado:</label>
-            <input id="InputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular el perímetro
-            </button>
-
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular el área
-            </button>
-            
-        </form>
-    </section>
+    <main class="container">
+        <section class="cuadrado">
+            <h2>Calcula el área y perímetro de un cuadrado</h2>
+            <form action="" id="miForm" class="cuadrado__form">
+                <label for="InputCuadrado">Escribe cuanto mide cada lado de tu cuadrado:</label>
+                <input id="InputCuadrado" type="number">
+                <div class="cuadrado__form-group">
+                    <button type="button" onclick="calcularPerimetroCuadrado()" class="cuadrado__form-boton-perimetro">
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaCuadrado()" class="cuadrado__form-boton-area">
+                        Calcular el área
+                    </button>
+                </div>
+                <label for="">El resultado del perímetro es: <br> <input type="text" id="cuadrado_perimetro"> </label>
+                <label for="">El resultado del area cuadrada es: <br> <input type="text" id="cuadrado_area"> </label>
+            </form>
+        </section>
+        <section class="triangulo">
+            <h2>Calcula el área y perímetro de un triangulo</h2>
+            <form action="" id="miForm2" class="triangulo__form">
+                <div class="triangulo__form-label">
+                <label for="InputTrianguloA">Lado A:</label>
+                <input id="InputTrianguloA" type="number">
+                <label for="InputTrianguloB">Lado B:</label>
+                <input id="InputTrianguloB" type="number">
+                <label for="InputTrianguloC">Base:</label>
+                <input id="InputTrianguloC" type="number">
+                <label for="InputTrianguloD">Altura:</label>
+                <input id="InputTrianguloD" type="number">
+                </div>
+                <div class="triangulo__form-group">
+                    <button type="button" onclick="calcularPerimetroTriangulo()" class="triangulo__form-boton-perimetro">
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaTriangulo()" class="triangulo__form-boton-area">
+                        Calcular el área
+                    </button>
+                </div>
+                <label for="" class="triangulo-result-label1" >El resultado del perímetro es:  <br> </label>
+                <input type="text" id="triangulo_perimetro"> 
+                <label for="" class="triangulo-result-label2" >El resultado del area cuadrada es: <br> </label>
+                <input type="text" id="triangulo_area">
+            </form>
+        </section>
+        <section class="circulo">    
+            <h2>Calcula el área y perímetro de un cirulo</h2>
+            <form action="" id="miForm3" class="circulo__form">
+                <label for="InputCirculo">Escribe cuanto mide el radio de tu circulo:</label>
+                <input id="InputCirculo" type="number">
+                <div class="circulo__form-group">
+                    <button type="button" onclick="calcularPerimetroCirculo()" class="circulo__form-boton-perimetro" >
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaCirculo()" class="circulo__form-boton-area" >
+                        Calcular el área
+                    </button>
+                </div>
+                <label for="">El resultado del perímetro es: <br> <input type="text" id="circulo_perimetro"> </label>
+                <label for="">El resultado del area circulo es: <br> <input type="text" id="circulo_area"> </label>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

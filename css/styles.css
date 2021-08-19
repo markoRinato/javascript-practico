@@ -1,0 +1,347 @@
+:root{
+    --bg: #1e2345;
+    --violet: rgb(161,132,240);
+    --pink: #d60087;
+    --turquoise: #2fdabd;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+header h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    color: floralwhite;
+    padding-top: 60px;
+    background-image: linear-gradient(45deg, var(--violet), var(--turquoise) );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+header p{
+    font-family: 'Secular One', sans-serif;
+    font-size: 28px;
+    color: ghostwhite;
+    padding-bottom: 70px;
+}
+.header__button{
+    position: absolute;
+    top: 25px;  
+    left: 200px;
+}
+.header__button{
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+    font-size: 15px;
+    color: #151517;
+    background-color: ghostwhite;
+    margin-right: 50px;
+}
+.header__button:hover{
+    background: #a945d7;
+    color: ghostwhite;
+    box-shadow: 0 0 10px #3a353b, 0 0 40px #a945d7, 0 0 80px #a945d7;
+    transition: 1s;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/fondo4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CUADARADO */
+.cuadrado{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+    margin: 0 18px;
+    border-radius: 5px;
+}
+.cuadrado h2{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 18px;
+    background-image: linear-gradient(45deg, ghostwhite, var(--turquoise) );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+}
+.cuadrado__form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cuadrado__form label{
+    font-family: 'Secular One', sans-serif;
+    font-size: 16px;
+    color: ghostwhite;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+.cuadrado__form input{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #151517;
+    font-weight: bold;
+}
+.cuadrado__form-group{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.cuadrado__form-boton-perimetro{
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+    font-size: 12px;
+    color: ghostwhite;
+    background-color: #151517;
+    margin-right: 50px;
+}
+.cuadrado__form-boton-perimetro:hover{
+    background: #a945d7;
+    box-shadow: 0 0 10px #3a353b, 0 0 40px #a945d7, 0 0 80px #a945d7;
+    transition: 1s;
+}
+.cuadrado__form-boton-area{
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+    font-size: 12px;
+    color: ghostwhite;
+    background-color: #151517;
+    margin-left: 50px;
+}
+.cuadrado__form-boton-area:hover{
+    background: #a945d7;
+    box-shadow: 0 0 10px #3a353b, 0 0 40px #a945d7, 0 0 80px #a945d7;
+    transition: 1s;
+}
+
+/* CIRCULO */
+.circulo{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+    margin: 0 18px;
+    border-radius: 5px;
+}
+.circulo h2{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 18px;
+    background-image: linear-gradient(45deg, ghostwhite, var(--turquoise) );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+}
+.circulo__form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.circulo__form label{
+    font-family: 'Secular One', sans-serif;
+    font-size: 16px;
+    color: ghostwhite;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+.circulo__form input{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #151517;
+    font-weight: bold;
+}
+.circulo__form-group{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.circulo__form-boton-perimetro{
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+    font-size: 12px;
+    color: ghostwhite;
+    background-color: #151517;
+    margin-right: 50px;
+}
+.circulo__form-boton-perimetro:hover{
+    background: #a945d7;
+    box-shadow: 0 0 10px #3a353b, 0 0 40px #a945d7, 0 0 80px #a945d7;
+    transition: 1s;
+}
+.circulo__form-boton-area{
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+    font-size: 12px;
+    color: ghostwhite;
+    background-color: #151517;
+    margin-left: 50px;
+}
+.circulo__form-boton-area:hover{
+    background: #a945d7;
+    box-shadow: 0 0 10px #3a353b, 0 0 40px #a945d7, 0 0 80px #a945d7;
+    transition: 1s;
+}
+
+/* TRIANGULO */
+.triangulo{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+    border-radius: 5px;
+}
+.triangulo h2{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 18px;
+    background-image: linear-gradient(45deg, ghostwhite, var(--turquoise) );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+}
+.triangulo__form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    position: relative;
+    right: 40px;
+}
+.triangulo__form label{
+    font-family: 'Secular One', sans-serif;
+    font-size: 16px;
+    color: ghostwhite;
+    padding-top: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.triangulo__form-label{
+    display: flex;
+    justify-content: space-between;
+}
+.triangulo__form-label label{
+    position: relative;
+    top: -5px;
+    left: 70px;
+}
+.triangulo__form input{
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #151517;
+    font-weight: bold;
+    width: 80px;
+    margin-left: 10px;
+}
+.triangulo__form-group{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.triangulo__form-boton-perimetro{
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+    font-size: 12px;
+    color: ghostwhite;
+    background-color: #151517;
+    margin-right: 50px;
+}
+.triangulo__form-boton-perimetro:hover{
+    background: #a945d7;
+    box-shadow: 0 0 10px #3a353b, 0 0 40px #a945d7, 0 0 80px #a945d7;
+    transition: 1s;
+}
+.triangulo__form-boton-area{
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+    font-size: 12px;
+    color: ghostwhite;
+    background-color: #151517;
+    margin-left: 50px;
+}
+.triangulo__form-boton-area:hover{
+    background: #a945d7;
+    box-shadow: 0 0 10px #3a353b, 0 0 40px #a945d7, 0 0 80px #a945d7;
+    transition: 1s;
+}
+.triangulo .triangulo-result-label1{
+    margin-top: 58px;
+    text-align: center;
+}
+.triangulo .triangulo-result-label2{
+    margin-top: 0px;
+    text-align: center;
+    position: absolute;
+    top: 480px;
+}
+form #triangulo_perimetro{
+    width: 250px;
+    margin-right: 10px;
+    position: absolute;
+    top: 280px;
+}
+form #triangulo_area{
+    width: 250px;
+    margin-right: 10px;
+    position: absolute;
+    top: 460px;
+}
